@@ -1,0 +1,66 @@
+.nav-link{
+    font-weight: lighter;
+    font-size: 17px;
+    color: white;}
+.navbar-brand{
+        position: relative;
+        left: 10px;}
+#collapsibleNavbar{
+        position: relative;
+        right: 10px;}
+.user{
+    color: white;
+    position: relative;
+    top: 9px;}
+.logout{
+  position: relative;
+    top: 9px;}
+h1{
+    font-weight: lighter;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+p{
+    font-weight:lighter;
+    font-size: 50px;}
+hr{ color: black;}
+.container-lg{
+    background-image: url(2.jpg);
+}
+.section-title{background-color: white; }
+.section-subtitle{
+    font-weight: lighter;
+    font-size: x-large;}
+h2{
+    font-weight: bolder;
+}
+.social-list__inline {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;}
+ #footer {
+       background-color: whitesmoke;
+       padding: 100px 0;
+        text-align: center;}
+.section-spacer a{text-align: end;}
+.jumbotron button{
+  
+  font-size: 18px;
+}
+#PresentationBDE{
+  background-image: url(2.jpg);
+}
+.social-list__inline{position: relative;
+  left: 80px;}
+  #btn2{
+    font-size: 25px;
+  }
+  .carousel-item{
+    width: 100px;
+  }
+  .cacarousel-control-prev-icon{
+    color: navy;
+  }
+ .social-list__inline{
+    position: relative;
+    left: 350px;
+  }

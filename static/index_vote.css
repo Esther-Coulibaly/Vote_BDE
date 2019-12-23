@@ -1,0 +1,23 @@
+.index_vote{
+    padding: 90px;
+}
+.lead{
+    font-family: "Leelawadee UI";
+    font-size: 20px;
+}
+#vote_bouton{
+    font-size: 20px;
+    font-weight: lighter;
+    color:white;
+    border-color:#007bff;
+    display:inline-block;
+    text-align:center;
+    vertical-align:middle;
+    cursor:pointer;
+    background-color: navy;
+    border: 1px solid ;
+    border-radius: 25rem;
+    transition:color .15s ease-in-out;
+    line-height:1.5;
+}
+

@@ -1,0 +1,21 @@
+.nav-link{
+    font-weight: lighter;
+    font-size: x-large;
+    color: white;}
+.navbar-brand{
+        position: relative;
+        left: 10px;}
+#collapsibleNavbar{
+        position: relative;
+        right: 40px;}
+ h1{
+            font-weight: lighter;
+        color: navy;}
+
+.user{
+    color: white;
+    position: relative;
+    top: 9px;}
+.logout{
+  position: relative;
+    top: 9px;}

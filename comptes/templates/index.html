@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load staticfiles %}
+    <meta charset="UTF-8">
+    <title>Frontend-BDE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"  crossorigin="anonymous">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+         <div class="container-fluid">
+             <a  class="navbar-brand" href="{% url 'Compte:home_compte' %}" > <img src="{% static 'logo_bde.png' %}" alt="BDE ENSIT" style="width: 95px;"></a>
+              <div>
+                  <button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+                   <span class="navbar-toggler-icon"></span>
+                     </button>
+                      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                      <ul class="navbar-nav">
+                     <li class="nav-item-active"><a class="nav-link" href="{% url 'Compte:home_compte' %}">Home</a></li>
+                      <li class="nav-item"><a class="nav-link" href="{% url 'Vote:home' %}"> Vote</a></li>
+                      <li class="nav-item"><a class="nav-link" href="{% url 'Compte:presentation_url' %}"> Voters</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'Compte:apropos_url' %}"  > Apropos</a></li>&emsp;
+
+                          {% if request.user.is_authenticated %}
+                      <li class="user">Username:&emsp;{{ request.user }} </li>&emsp;
+                      <li class="logout"><a href="{% url 'Compte:logout_url' %}"> Logout</a></li>
+ {% endif %}
+                   </ul>&emsp;
+             </div>
+            </div>
+         </div>
+   </nav>
+    {% block content %}
+   <br><br><br>
+    <header>
+          <div class="jumbotron text-center bg-white">
+                 <P>Register to vote</P><hr width="300px"><hr width="200px"><hr width="100px">
+                 <button type="button" class="btn btn-outline-primary" ><a href="{% url 'Compte:register_url' %}">Register now</a></button> &emsp;&emsp;
+                 <button type="button" class="btn btn-outline-primary"><a href="{% url 'Compte:login_url' %}">Log in</a></button>
+                    </div>
+    </header>
+         <div class="container-fluid">
+                      <br>
+                          <div class="container-lg ">
+                         <br>
+                               <div id="demo" class="carousel slide" data-ride="carousel">
+
+                                  <!-- Indicators -->
+                                  <ul class="carousel-indicators">
+                                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                    <li data-target="#demo" data-slide-to="1"  class="active"></li>
+                                    <li data-target="#demo" data-slide-to="2"  class="active"></li>
+                                  </ul>
+
+                                  <!-- The slideshow -->
+                                  <div class="carousel-inner text-center">
+                                    <div class="carousel-item active ">
+                                      <img src="{% static "one2.jpg" %}" class="rounded-circle" alt="Hadassa Esther" width="350" height="400">
+                                      <div class="carousel-caption">
+                                        <h3>Hadassa Esther</h3>
+                                        <p1>Ensemble, soyons unis !</p1>
+                                        <ul class="social-list__inline mt-10 ">
+                                          <li>
+                                            <a href="" target="_blank" rel="noopener" aria-label="page twitter">
+                                              <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                          <li>
+                                            <a href=""target="_blank" rel="noopener" aria-label="page facebook">
+                                              <i class="fab fa-facebook"></i>
+                                            </a>
+                                          </li>
+
+                                                <a href=""target="_blank" rel="noopener" aria-label="page linkedin">
+                                                  <i class="fab fa-linkedin"></i>
+                                                </a>
+                                              </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="carousel-item ">
+                                      <img src="{% static '3.jpg' %}" class="rounded-circle" alt="Coulibaly Youssouf" width="350" height="400">
+                                      <div class="carousel-caption">
+                                        <h3>Coulibaly Youssouf</h3>
+                                        <p1>Ensemble, soyons unis !</p1>
+                                        <ul class="social-list__inline mt-10 ">
+                                          <li>
+                                            <a href="" target="_blank" rel="noopener" aria-label="page twitter">
+                                              <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                          <li>
+                                            <a href=""target="_blank" rel="noopener" aria-label="page facebook">
+                                              <i class="fab fa-facebook"></i>
+                                            </a>
+                                          </li>
+                                                <a href=""target="_blank" rel="noopener" aria-label="page linkedin">
+                                                  <i class="fab fa-linkedin"></i>
+                                                </a>
+                                              </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="carousel-item ">
+                                      <img src="{% static '4.jpg' %}" class="rounded-circle" alt="Diomande Arielle" width="350" height="400">
+                                      <div class="carousel-caption">
+                                        <h3>Diomande Arielle</h3>
+                                        <p1>Ensemble, soyons unis !</p1>
+                                        <ul class="social-list__inline mt-10 ">
+                                          <li>
+                                            <a href="" target="_blank" rel="noopener" aria-label="page twitter">
+                                              <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                          <li>
+                                            <a href=""target="_blank" rel="noopener" aria-label="page facebook">
+                                              <i class="fab fa-facebook"></i>
+                                            </a>
+                                          </li>
+
+                                                <a href=""target="_blank" rel="noopener" aria-label="page linkedin">
+                                                  <i class="fab fa-linkedin"></i>
+                                                </a>
+                                              </li>
+                                        </ul>
+                                      </div>
+                                      </div>
+                                  </div>
+                                  <!-- Left and right controls -->
+                                  <a class="carousel-control-prev"  href="#demo" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" ></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="carousel-control-next" href="#demo" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                                </div>
+                                <div class="container">
+                                  <nav id="Candidats" class="section-spacer candidat-section" >
+                                      <header class="text-center section-header">
+                                          <h4 class="section-title " style="font-size: x-large; color: navy; font-weight: lighter;">  <strong> CANDIDATES FOR THE PRESIDENT </strong></h4><hr width="300px"><br>
+                                                </header>
+                                                     </nav>
+                                                     </div>
+                                <p class="section-subtitle text-center bg-white">We have always had the energy to do rather than last, which is what sets us apart from some.
+                                We make a commitment to uphold this vote, to do it with our method.</p><br>
+                              </div>
+                          </div>
+            <br><br>
+  <div class="container-fluid">
+            <br>
+            <div class="jumbotron text-center bg-white type" ><a href="#">
+
+            </a><button  type="button" id="btn2" class="btn btn-outline-primary">BDE ENSIT</button></a><br><br>
+            </div>
+            <nav id="PresentationBDE" class="section-spacer Presentation BDE" >
+                    <header class="text-center section-header">
+                       <br><br>
+                            <div class="card-deck">
+                              <div class="card bg-white">
+                                <div class="card-body text-center">
+                                  <p class="card-text "  style="font-size:20px;">
+                                    The Student Office is an association which officially represents all ENSIT students.
+                                    <br> It aims to energize student life through extra and intra-school activities,
+                                     and events organized for the development of students. He promotes and supervises
+                                     all training clubs within the ENSIT, the know-how of students through
+                                     the organization of his career day.
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="card bg-white" >
+                                <div class="card-body text-center">
+                                  <p class="card-text" style="font-size:20px;">The New Superior School of Engineers and Technologies (ENSIT) <br><br>
+                                     is an engineering school with an integrated preparatory cycle located in Abidjan in Côte d'Ivoire.
+                                    A higher establishment of the Agence universitaire de la francophonie network, it trains engineers in the ICT field.</p>
+                                </div>
+                              </div>
+                              <div class="card bg-white">
+                                <div class="card-body text-center">
+                                  <p class="card-text" style="font-size: 20px;">The election of the president of the BDE takes place every year
+                                    , with a renewable mandate.in addition, we have within ENSIT, a program presented by Google Developers, "Developer student club". DSCs are university community groups for
+                                     students from all programs wishing to be developers. Web and mobile development,
+                                     Cloud and leadership skills.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </header><br><br><br><br>
+                                   </nav><br><br>
+       </div>
+                      <div class="jumbotron text-center bg-white type"  >
+
+                                 <button  type="button" id="btn2" class="btn btn-outline-primary" data-toggle="collapse" data-target="#formulaire" >
+                                   Give your opinion on the site</button><br><br>
+                                 <div class="container-lg">
+                                 <iframe style="" id="formulaire" class="collapse" src="https://docs.google.com/forms/d/e/1FAIpQLSdQcBrMzo-O1ktnq-RvBWSz9D91rH6GyuoLCRq_KonbPwYhHw/viewform?embedded=true"
+                                  width="70%" height="1800" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+                                </div>
+                      </div>
+        <footer class="section-spacer footer-section text-center " id="footer">
+                    <div class="container-fluid">
+
+                      <div class="row flex-column-reverse flex-sm-row flex-lg-row">
+                        <div class="col-md-8 col-6">
+                          <div class="footer-widget first-of-footer-widget">
+                            <img src="{% static 'logo_bde.png' %}" width=100px; class="logo-sm mb-10 mt-0" alt="BDE ENSIT footer logo">
+                            <br><p1 class="mt-0">&copy; 2019 |  All rights reserved.</p1>
+                           <br> <span>Do not hesitate to send us an email: </span>
+                            <a href="BDE_ENSIT@gmail.com">BDE_ENSIT@gmail.com</a><br>
+                            <span>Follow us on  </span>
+                            <ul class="social-list__inline mt-10">
+                              <li>
+                                <a href="" target="_blank" rel="noopener" aria-label="page twitter">
+                                  <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                              <li>
+                                <a href=""target="_blank" rel="noopener" aria-label="page facebook">
+                                  <i class="fab fa-facebook"></i>
+                                </a>
+                              </li>
+                              <li>
+                                  <a href=""target="_blank" rel="noopener" aria-label="page youtube">
+                                    <i class="fab fa-youtube"></i>
+                                  </a>
+                                </li>
+                                <li>
+                                    <a href=""target="_blank" rel="noopener" aria-label="page linkedin">
+                                      <i class="fab fa-linkedin"></i>
+                                    </a>
+                                  </li>
+                            </ul>
+                          </div>
+                        </div>
+                     </div>
+                  </div>
+
+                </footer>
+
+
+</body>
+{% endblock %}
+</html>

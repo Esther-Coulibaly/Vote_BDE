@@ -1,0 +1,78 @@
+.nav-link{
+    font-weight: lighter;
+    font-size: x-large;
+    color: white;}
+.navbar-brand{
+        position: relative;
+        left: 10px;}
+#collapsibleNavbar{
+        position: relative;
+        right: 40px;}
+.form-control{width: 450px;}
+.button{
+    font-size: 30px;
+    font-weight: lighter;}
+.user{
+    color: white;
+    position: relative;
+    top: 9px;}
+.logout{
+  position: relative;
+    top: 9px;}
+label{
+    font-weight: bolder;
+}
+h1{
+    font-weight: lighter;
+    font-size: xx-large;
+    color: navy;
+}
+#create{
+    text-align:center;
+     font-weight: lighter;
+    font-size: xx-large;
+    color: navy;
+}
+input{
+    display:block;
+    width:27%;
+    height:30px;
+    font-weight:lighter;
+
+}
+.register{
+padding:90px;
+}
+.register-inter{
+position:relative;
+left:100px;
+}
+label{
+ font-weight:bolder;
+ padding:10px;
+}
+span , ul{
+font-weight:lighter;
+}
+span{
+position:relative;
+top:20px;
+}
+.submit{
+ font-size: 20px;
+    font-weight: lighter;
+    color:white;
+    border-color:#007bff;
+    display:inline-block;
+    text-align:center;
+    vertical-align:middle;
+    cursor:pointer;
+    background-color: navy;
+    border: 1px solid ;
+    border-radius: 25rem;
+    transition:color .15s ease-in-out;
+    line-height:1.5;
+}
+p{
+padding:5px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  {% load staticfiles %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <title>Systeme de Vote {% block title %}{% endblock %}</title>
+  </head>
+  <body>
+ <div id="header">
+     <div id="logo"><img src="{% static 'logo_bde1.png' %}" /></div>
+    <ul id="navbar">
+        <li> <a href="{% url 'Entree:entree' %}"/> Accueil </a> </li>
+        <li> <a href="{% url 'Vote:home' %}"/> Passez au Vote </a> </li>
+        <li> <a href="{% url 'Compte:user_list_url' %}"/> Liste des Votants</a> </li>
+        <li> <a href="{% url 'Compte:user_list_url' %}"/> Contactez nous</a> </li>
+    </ul>
+</div>
+{% block content %}
+    <h1>Bienvenue, sur la page d'accueil</h1>
+
+         <a id="b_register" href="{% url 'Compte:register_url' %}">
+              S'enregistrer maintenant
+         </a>
+              <br>
+         <a id="b_login" href="{% url 'Compte:login_url' %}">
+              Se connecter à son compte
+         </a>
+
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,23 @@
+{% extends 'base.html' %} 
+{% block content %}
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'index2.css' %}">
+    <div class="index_vote">
+   <div class="jumbotron text-center bg-white">
+                <h1>WELCOME! </h1><br><br>
+                   <hr width="300px"><hr width="200px"><hr width="100px">
+                      </div>
+  {% if latest_question_list %}
+    {% for question in latest_question_list %}
+      <div class="card mb-3">
+        <div id="vote_carré">
+          <p class="lead">{{ question.question_text }}</p>
+          <a href="{% url 'Vote:detail_url' question.id %}" id="vote_bouton">Vote</a>
+        </div>
+      </div>
+    {% endfor %}
+  {% else %}
+    <p>No vote Available</p>
+      </div>
+  {% endif %}
+{% endblock %}

@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load staticfiles %}
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{% static 'register now.css' %}">
+    <div class="register">
+<h1>{{ question.question_text }}</h1>
+        <ul>
+	{% for choice in question.choice_set.all %}
+	<li>
+		<p class="mimi">{{ choice.choice_text }} <div class="mini"> {{ choice.votes }} vote{{ choice.votes | pluralize }}</div></p>
+	</li>
+	{% endfor %}
+    </ul>
+</div>
+<div id="myChart"></div>
+<script>
+
+    let objId = {{ question.id }};
+    let dataURL = "vote/resultdata/1/";
+    var state = {
+        'items': [],
+        'values': [],
+    };
+    $.ajax({
+        method: 'GET',
+        url: dataURL,
+        success:function (response) {
+            console.log("reponse", response);
+            for (var i in response){
+                var key = Object.keys(response[i])[0];
+                var value = Object.values(response[i])[0];
+                state.items.push(key);
+                state.values.push(value);
+            }
+            console.log('STATE', state)
+        }
+    });
+    let charData = {
+        "type" : "bar",
+        "scale-x":{
+            "values":[
+                "dorge",
+                "Erik",
+                "kara"
+            ]
+        },
+        "series":[
+            {
+                "values":[
+                    24,
+                    5,
+                    10
+                ]
+            }
+        ]
+    };
+    zingchart.render({
+        id: "myChart",
+        data : charData,
+    });
+</script>
+
+{% endblock %}

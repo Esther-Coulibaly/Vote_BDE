@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="338461f4-33a0-4501-ad4f-6d40e9b36f3e" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Django default" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Django default" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Django default" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Python Script" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="webapp2/invalid/Django" />
+    </ignored-facets>
+  </component>
+  <component name="ProjectId" id="1TkmtkYKZ72pa3fjOax5PAU33d2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dje Bi Cyrille\Documents\Mes Programmes\Python\webapp2\comptes\templates" />
+      <recent name="C:\Users\Dje Bi Cyrille\Documents\Mes Programmes\Python\webapp2\entree\templates" />
+      <recent name="C:\Users\Dje Bi Cyrille\Documents\Mes Programmes\Python\webapp2\vote\templates" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="webapp2" type="Python.DjangoServer" factoryName="Django server">
+      <module name="webapp2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="338461f4-33a0-4501-ad4f-6d40e9b36f3e" name="Default Changelist" comment="" />
+      <created>1574012685865</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574012685865</updated>
+      <workItem from="1574012745948" duration="2955000" />
+      <workItem from="1574061607853" duration="1734000" />
+      <workItem from="1574152418104" duration="870000" />
+      <workItem from="1574241868308" duration="991000" />
+      <workItem from="1574321879375" duration="7241000" />
+      <workItem from="1574340899166" duration="6514000" />
+      <workItem from="1574710178835" duration="84000" />
+      <workItem from="1574848630542" duration="4264000" />
+      <workItem from="1574939467819" duration="794000" />
+      <workItem from="1574947635397" duration="500000" />
+      <workItem from="1574973354111" duration="3800000" />
+      <workItem from="1575109185865" duration="1048000" />
+      <workItem from="1575196216830" duration="13052000" />
+      <workItem from="1575271397858" duration="2983000" />
+      <workItem from="1575294599071" duration="674000" />
+      <workItem from="1575449579244" duration="963000" />
+      <workItem from="1575486944519" duration="676000" />
+      <workItem from="1575928833535" duration="7296000" />
+      <workItem from="1575963598631" duration="2695000" />
+      <workItem from="1576008570414" duration="3373000" />
+      <workItem from="1576069939579" duration="2910000" />
+      <workItem from="1576170719882" duration="11684000" />
+      <workItem from="1576226213556" duration="831000" />
+      <workItem from="1576232137298" duration="975000" />
+      <workItem from="1576435401437" duration="5463000" />
+      <workItem from="1576497642522" duration="2714000" />
+      <workItem from="1576536420490" duration="3280000" />
+      <workItem from="1576575113465" duration="13971000" />
+      <workItem from="1576610197334" duration="2994000" />
+      <workItem from="1577138777761" duration="4622000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="460" y="138" key="FileChooserDialogImpl" timestamp="1576341062850">
+      <screen x="0" y="0" width="1360" height="768" />
+    </state>
+    <state x="460" y="138" key="FileChooserDialogImpl/0.0.1360.768@0.0.1360.768" timestamp="1576341062850" />
+    <state x="362" y="50" width="998" height="718" key="SettingsEditor" timestamp="1576345332354">
+      <screen x="0" y="0" width="1360" height="768" />
+    </state>
+    <state x="362" y="50" width="998" height="718" key="SettingsEditor/0.0.1360.768@0.0.1360.768" timestamp="1576345332354" />
+    <state x="381" y="206" key="com.intellij.ide.util.TipDialog" timestamp="1576341036477">
+      <screen x="0" y="0" width="1360" height="768" />
+    </state>
+    <state x="381" y="206" key="com.intellij.ide.util.TipDialog/0.0.1360.768@0.0.1360.768" timestamp="1576341036477" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/webapp2/urls.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
