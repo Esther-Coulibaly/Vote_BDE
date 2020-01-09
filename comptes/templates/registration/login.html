@@ -1,10 +1,10 @@
 {% extends 'index.html' %}
-{% load staticfiles %}
+{% load static %}
 {%  block content %}
     <link rel="stylesheet" href="{% static 'log in.css' %}">
      <div class="register">
          <form method="POST">
-             <br><br>
+             <br>
          <div><h1 id="create">Login to an account</h1><hr width="300px"><hr width="200px"><hr width="100px"> </div>
              <div class="register-inter">
     {% csrf_token %}

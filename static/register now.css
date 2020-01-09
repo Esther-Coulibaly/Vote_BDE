@@ -1,7 +1,14 @@
 .nav-link{
     font-weight: lighter;
-    font-size: x-large;
+    font-size: 17px;
     color: white;}
+    .user{
+        color: white;
+        position: relative;
+        top: 9px;}
+    .logout{
+      position: relative;
+        top: 9px;}
 .navbar-brand{
         position: relative;
         left: 10px;}
@@ -30,6 +37,7 @@ h1{
 #create{
     text-align:center;
      font-weight: lighter;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: xx-large;
     color: navy;
 }
@@ -75,4 +83,12 @@ top:20px;
 }
 p{
 padding:5px;
+
+}
+.choice{
+    font-weight: lighter;
+    font-size: 25px;
+}
+.btn2{
+    width: 100px;
 }

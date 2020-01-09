@@ -1,5 +1,7 @@
 label{
     font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    font-stretch: extra-condensed;
     font-size: 20px;
     padding: 10px;
 display: inline-block;
@@ -7,7 +9,7 @@ margin-bottom: .5rem;}
 #create{
     text-align:center;
      font-weight: lighter;
-    font-size: x-large;
+    font-size: xx-large;
     color: navy;}
 input{
     display:block;
@@ -45,5 +47,5 @@ position: relative;
 top: 30px;
 left: 100px}
 p{
-padding:5px;
+padding:4px;
 }

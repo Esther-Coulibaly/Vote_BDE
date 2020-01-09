@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% load staticfiles %}
+    {% load static %}
     <meta charset="UTF-8">
     <title>Frontend-BDE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,7 +26,7 @@
                      <li class="nav-item-active"><a class="nav-link" href="{% url 'Compte:home_compte' %}">Home</a></li>
                       <li class="nav-item"><a class="nav-link" href="{% url 'Vote:home' %}"> Vote</a></li>
                       <li class="nav-item"><a class="nav-link" href="{% url 'Compte:presentation_url' %}"> Voters</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'Compte:apropos_url' %}"> Apropos</a></li>&emsp;
+                          <li class="nav-item"><a class="nav-link" href="{% url 'Compte:apropos_url' %}"> About</a></li>&emsp;
                           {% if request.user.is_authenticated %}
                       <li class="user">Username:&emsp;{{ request.user }} </li>&emsp;
                       <li class="logout"><a href="{% url 'Compte:logout_url' %}"> Logout</a></li>

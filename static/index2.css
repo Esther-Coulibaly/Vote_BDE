@@ -1,6 +1,6 @@
 .nav-link{
     font-weight: lighter;
-    font-size: x-large;
+    font-size: 17px;
     color: white;}
 .navbar-brand{
         position: relative;
@@ -9,7 +9,7 @@
         position: relative;
         right: 40px;}
  h1{
-            font-weight: lighter;
+       font-weight: lighter;
         color: navy;}
  p{
                 font-weight:lighter;
@@ -21,4 +21,7 @@
 .logout{
   position: relative;
     top: 9px;}
-
+#vote_bouton{
+  position: relative;
+  left:px;
+}

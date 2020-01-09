@@ -1,23 +1,28 @@
 {% extends 'base.html' %} 
 {% block content %}
-    {% load staticfiles %}
+    {% load static %}
     <link rel="stylesheet" href="{% static 'index2.css' %}">
     <div class="index_vote">
+      <br><br><br><br><br>
+      {% if request.user.is_authenticated %}
+      <div class="alert text-center alert-success alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert">×</button>   <strong>Success!</strong> &emsp; you can now vote.
+    </div>
+    {% endif %}
    <div class="jumbotron text-center bg-white">
-                <h1>WELCOME! </h1><br><br>
+                <h1>WELCOME! </h1><br>
+                <p>Vote your candidate</p>
                    <hr width="300px"><hr width="200px"><hr width="100px">
-                      </div>
-  {% if latest_question_list %}
+                   {% if latest_question_list %}
     {% for question in latest_question_list %}
-      <div class="card mb-3">
-        <div id="vote_carré">
-          <p class="lead">{{ question.question_text }}</p>
-          <a href="{% url 'Vote:detail_url' question.id %}" id="vote_bouton">Vote</a>
-        </div>
-      </div>
+    
+          <a href="{% url 'Vote:detail_url' question.id %}" id="vote_bouton" type="button" class="btn btn-outline-primary">Vote</a>
+     
     {% endfor %}
   {% else %}
     <p>No vote Available</p>
+                      </div>
+  
       </div>
   {% endif %}
 {% endblock %}
