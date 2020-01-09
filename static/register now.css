@@ -82,13 +82,13 @@ top:20px;
     line-height:1.5;
 }
 p{
-padding:5px;
-
-}
+padding:5px;}
 .choice{
     font-weight: lighter;
     font-size: 25px;
 }
 .btn2{
-    width: 100px;
-}
+ width: 100px;
+position:relative;
+left: 110px;}
+li{list-style: none;}

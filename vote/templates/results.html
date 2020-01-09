@@ -10,8 +10,11 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="{% static 'register now.css' %}">
-    <div class="register">
-<h1>{{ question.question_text }}</h1>
+    <div class="register jumbotron text-center">
+        <br>
+        <div class="alert text-center alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">×</button>   <strong>Merci , Votre vote a été comptabilisé !</strong> &emsp; Ci dessous les resultats provisoire...
+        </div>
         <ul>
 	{% for choice in question.choice_set.all %}
 	<li>

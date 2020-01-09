@@ -2,7 +2,7 @@
 {% block content %}
 {% load static %}
     <link rel="stylesheet" href="{% static 'register now.css' %}">
-    <div class="register">
+    <div class="register"><br><br>
 <a class="btn btn-secondary btn-sm mb-3" href="{% url 'Vote:home' %}">Back To Polls</a>
 <h1 class="text-center mb-3">Qui est votre Président ?</h1>
 <p class="choice text-center" >Faites le bon choix !</p><hr width="300px"><hr width="100px">
@@ -13,10 +13,10 @@
 </p>
 {% endif %}
 <div class="detail jumbotron ">
-<form action="{% url 'Vote:vote_url' question.id %}" method="post">
+<form action="{% url 'Vote:vote_url' question.id %}" method="post" >
 	{% csrf_token %}
 	{% for choice in question.choice_set.all %}
-		<div class="">
+		<div class="text-center">
 			<input
 				type="radio"
 				name="choice"
@@ -24,14 +24,14 @@
 				id="choice{{ forloop.counter }}"
 				value="{{ choice.id }}"
 				
-			/>
+			/> 
 			
 			<label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label
-			>
+			><br>
 		</div>
 	{% endfor %}
 	<br>
-	<input type="submit" class="btn2 btn-outline-primary text-center" value="Vote" />
+	<input type="submit" class="btn2 btn-outline-primary text-center rounded" value="Vote" />
 </form>
 </div>
     </div>
